@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/git-scoreboard/static/css/main.073c9b0a.css",
+    "main.js": "/git-scoreboard/static/js/main.7a7a2fdc.js",
+    "static/js/787.141d31f8.chunk.js": "/git-scoreboard/static/js/787.141d31f8.chunk.js",
+    "static/media/logo.svg": "/git-scoreboard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/git-scoreboard/index.html",
+    "main.073c9b0a.css.map": "/git-scoreboard/static/css/main.073c9b0a.css.map",
+    "main.7a7a2fdc.js.map": "/git-scoreboard/static/js/main.7a7a2fdc.js.map",
+    "787.141d31f8.chunk.js.map": "/git-scoreboard/static/js/787.141d31f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7a7a2fdc.js"
+  ]
+}
