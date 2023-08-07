@@ -2,7 +2,7 @@ const { Octokit } = require("@octokit/rest");
 
 // Instantiate Octokit
 const octokit = new Octokit({
-  auth: "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",
+  auth: "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",
 });
 
 const owner = "ideabrian";
@@ -46,6 +46,28 @@ async function updateScoreboard(scoreboard) {
     sha: data.sha,
   });
 }
+
+
+
+async function increaseScore(player, increment) {
+    const scoreboard = await getScoreboard();
+    
+    // If the player doesn't exist, initialize with the increment value
+    // If the player exists, add the increment value to the current score
+    scoreboard[player] = scoreboard[player] ? scoreboard[player] + increment : increment;
+    
+    await updateScoreboard(scoreboard);
+  }
+  
+  async function decreaseScore(player, decrement) {
+    const scoreboard = await getScoreboard();
+    
+    // If the player doesn't exist, initialize with the negative of decrement value
+    // If the player exists, subtract the decrement value from the current score
+    scoreboard[player] = scoreboard[player] ? scoreboard[player] - decrement : -decrement;
+    
+    await updateScoreboard(scoreboard);
+  }
 
 // Usage
 (async function () {
