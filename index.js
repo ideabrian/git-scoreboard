@@ -6,7 +6,7 @@ const octokit = new Octokit({
 });
 
 const owner = "ideabrian";
-const repo = "";
+const repo = "git-scoreboard";
 
 async function getScoreboard() {
   const { data } = await octokit.repos.getContent({
@@ -52,7 +52,7 @@ async function updateScoreboard(scoreboard) {
   const scoreboard = await getScoreboard();
   console.log(scoreboard);
 
-  scoreboard["new player"] = 100;
+  scoreboard["Brian"] = 100;
   await updateScoreboard(scoreboard);
 
   console.log(await getScoreboard());
